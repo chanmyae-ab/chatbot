@@ -6,5 +6,5 @@ if(isset($_REQUEST['hub_challenge'])) {
 }
 
 if($token == "chatbot") {
-    echo $challenge
+    echo $challenge;
 }
