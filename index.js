@@ -1,3 +1,4 @@
+
 'use strict'
 
 const express = require('express')
@@ -23,7 +24,7 @@ let token = "EAAclxDQjQCUBAAV2BCSQLq3dUTAxsXdsOTHLPZAm4IkJUo7wp2yEZAsoqHJpYbDkhE
 // Facebook
 
 app.get('/webhook/', function(req, res) {
-  if (req.query['hub.verify_token'] === "chatbot") {
+  if (req.query['hub.verify_token'] === "ThomTex") {
     res.send(req.query['hub.challenge'])
   }
   res.send("Wrong token")
